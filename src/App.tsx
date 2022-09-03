@@ -1,22 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-
+import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import Home from './Components/Home';
+import User from './Components/User';
 import './App.css';
+import SideBar from './shared/Sidebar';
+import Contacts from './Components/Contacts';
+import { positions } from '@mui/system';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-            <h1>
-                AcadmicMeat
-            </h1>
-        </p>
-        <p>
-          start Sep1
-        </p>
-      </header>
+    <div className="App" style={{width:"100vw",height:"100vh",display:"flex",position:"relative"}}>      
+<BrowserRouter>
+<SideBar/>
+<div style={{position:"absolute",width:"100%",height:"100%", marginLeft:"10rem"}}>
+<Routes>
+  <Route path='/' element={<Home/>}/>
+  <Route path='/user' element={<User/>}/>
+  <Route path="/sidebar" element={<SideBar/>}/>
+  <Route path="/contact" element={<Contacts/>}/>
+</Routes>
+</div>
+</BrowserRouter>
     </div>
   );
 }
