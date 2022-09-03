@@ -1,0 +1,7 @@
+.MuiDrawer-paperAnchorLeft{
+    min-width: 10rem;
+    max-width: auto;
+}
+.Mui-focusVisible{
+    color: pink;
+}
