@@ -1,27 +1,33 @@
 .MuiDrawer-paperAnchorLeft{
-    min-width: 10rem;
+    min-width: 15%;
     max-width: auto;
 }
 .Mui-focusVisible{
     color: pink;
 }
 
-.wrapper{
-    height: 100%;
-    width: 100%;
+.errorPage{
     display: flex;
-    align-items: center;
     justify-content: center;
-    
-}
-.errorNo{
-    font-size: 10rem;
-    font-family: cursive;
-    opacity: 10%;
-}
-.errorContent {
-    padding: 10px;
     align-items: center;
-    font-size: 5rem;
-    font-family: cursive;
+    text-align: center;
+}
+.homeBtn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 10rem;
+    height: 3rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: large;
+    background-color: blue;
+    color: white;
+}
+.homeBtn:hover{
+    background-color: rgb(187, 28, 55);
+    cursor: pointer;
+    font-size: larger;
+    color: black;
 }

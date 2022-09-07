@@ -10,10 +10,13 @@ import Page404 from "./shared/ErrorPage"
 
 function App() {
   return (
-    <div className="App" style={{width:"100vw",height:"100vh",display:"flex",position:"relative"}}>      
+    <div id="outer-container">      
 <BrowserRouter>
+<div id="sidebar">
 <SideBar/>
-<div style={{position:"absolute",width:"100%",height:"100%"}}>
+</div>
+
+<div id="content">
 <Routes>
   <Route path='/' element={<Home/>}/>
   <Route path='/user' element={<User/>}/>
