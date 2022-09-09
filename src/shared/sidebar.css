@@ -1,13 +1,15 @@
 .MuiDrawer-paperAnchorLeft{
     min-width: 15%;
-    max-width: auto;
+    max-width: 15%;
 }
 .Mui-focusVisible{
     color: pink;
 }
 
-.errorPage{
+.commonPage{
     display: flex;
+    height: 100vh;
+    width: 100vw;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -17,17 +19,107 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 10rem;
+    width: 10%;
     height: 3rem;
     border: 1px solid black;
     border-radius: 10px;
-    font-size: large;
+    font-size: 90%;
     background-color: blue;
     color: white;
 }
 .homeBtn:hover{
-    background-color: rgb(187, 28, 55);
+    background-color: rgb(142, 136, 138);
     cursor: pointer;
     font-size: larger;
-    color: black;
+    color: rgb(10, 6, 65);
 }
+.comingpage{
+    display:flex;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.soonPage{
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+}   
+.dot-pulse {
+    position: relative;
+    left: -9999px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #9880ff;
+    color: #9880ff;
+    box-shadow: 9999px 0 0 -5px #9880ff;
+    animation: dotPulse 1.5s infinite linear;
+    animation-delay: .25s;
+  }
+  
+  .dot-pulse::before, .dot-pulse::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #9880ff;
+    color: #9880ff;
+  }
+  
+  .dot-pulse::before {
+    box-shadow: 9984px 0 0 -5px #9880ff;
+    animation: dotPulseBefore 1.5s infinite linear;
+    animation-delay: 0s;
+  }
+  
+  .dot-pulse::after {
+    box-shadow: 10014px 0 0 -5px #9880ff;
+    animation: dotPulseAfter 1.5s infinite linear;
+    animation-delay: .5s;
+  }
+  
+  @keyframes dotPulseBefore {
+    0% {
+      box-shadow: 9984px 0 0 -5px #9880ff;
+    }
+    30% {
+      box-shadow: 9984px 0 0 2px #9880ff;
+    }
+    60%,
+    100% {
+      box-shadow: 9984px 0 0 -5px #9880ff;
+    }
+  }
+  
+  @keyframes dotPulse {
+    0% {
+      box-shadow: 9999px 0 0 -5px #9880ff;
+    }
+    30% {
+      box-shadow: 9999px 0 0 2px #9880ff;
+    }
+    60%,
+    100% {
+      box-shadow: 9999px 0 0 -5px #9880ff;
+    }
+  }
+  
+  @keyframes dotPulseAfter {
+    0% {
+      box-shadow: 10014px 0 0 -5px #9880ff;
+    }
+    30% {
+      box-shadow: 10014px 0 0 2px #9880ff;
+    }
+    60%,
+    100% {
+      box-shadow: 10014px 0 0 -5px #9880ff;
+    }
+  }

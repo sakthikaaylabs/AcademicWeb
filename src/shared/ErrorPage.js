@@ -1,14 +1,15 @@
 import React from 'react'
 import "./sidebar.css"
-import {useNavigate} from 'react-router-dom'
+import {useNavigate,useLocation} from 'react-router-dom'
 import img from "./404.png"
 const ErrorPage = () => {
+  const {pathname}=useLocation()
   const navigate=useNavigate()
   return (
-    <div className='errorPage'>
-          <img src={img} />
+    <div className='commonPage'>
+          <img src={img} alt=""/>
 
-              <div className='homeBtn' onClick={()=>navigate('/')}>Back To Home</div>
+              <div className='homeBtn' onClick={()=>navigate('/',{state:pathname})}>Back To Home</div>
         </div >
   )
 }
