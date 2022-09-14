@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div> <header className="App-header">
+    <div> <p className="App-header">
 
     <p>
         <h1>
@@ -12,7 +12,7 @@ const Home = () => {
     <p>
       start Sep1
     </p>
-  </header></div>
+  </p></div>
   )
 }
 

@@ -1,10 +1,10 @@
 import React from 'react'
-
-import SideBar from './Sidebar'
+import { Box } from '@mui/material'
+import {SideAppBar,DrawerHeader} from './Sidebar'
 
 
 const RouteWithSB = ({ Component }) => {
-  return <><div id='sidebar'><SideBar /></div><div id="content"><Component /></div></>
+  return <><SideAppBar /><Box component="main" sx={{ flexGrow: 1, p: 3 }}><DrawerHeader/><Component /></Box></>
 }
 export default RouteWithSB
 
