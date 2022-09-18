@@ -1,10 +1,10 @@
 import React from 'react';
 import { Card, CardMedia, OutlinedInput, InputAdornment, Typography, Button, Box, Checkbox, Link } from '@mui/material';
-import LoginImg from '../image/loginImg.jpg';
 import GoogleIcon from '@mui/icons-material/Google';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { EmailOutlined, LockOutlined } from '@mui/icons-material';
 
+const LoginImg = require ('../image/loginImg.jpg');
 
 
 interface State {

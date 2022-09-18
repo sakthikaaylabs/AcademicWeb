@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardMedia, Typography, Box, Checkbox, Button, Link,OutlinedInput, InputAdornment, } from '@mui/material';
 import { AccountCircle, EmailOutlined, LockOutlined } from '@mui/icons-material';
 
-import SignupImg from '../image/signup.jpg';
+const SignupImg = require('../image/signup.jpg');
 
 
 interface State {

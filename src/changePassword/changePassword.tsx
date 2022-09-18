@@ -11,11 +11,11 @@ export default function ChangePassword() {
                     <Typography>Change Password</Typography>
                 </div>
                 <form className="changePwdForm" style={{display:'flex',flexDirection:'column',gap:'10px',alignItems:'flex-start',margin:'50px'}}>
-                    <label for='currentPassword'> Current Password</label>
+                    <label htmlFor='currentPassword'> Current Password</label>
                     <TextField id="currentPassword" variant="outlined" sx={{width:'90%'}} />
-                    <label for='changePassword'> Change Password</label>
+                    <label htmlFor='changePassword'> Change Password</label>
                     <TextField id="changePassword" variant="outlined"  sx={{width:'90%'}}/>
-                    <label for='confirmChangePassword'>Confirm Change Password</label>
+                    <label htmlFor='confirmChangePassword'>Confirm Change Password</label>
                     <TextField id="confirmChangePassword" variant="outlined" sx={{width:'90%'}} />
                     <Button variant="contained" sx={{backgroundColor:'#05f'}}>Save</Button>
                 </form>
