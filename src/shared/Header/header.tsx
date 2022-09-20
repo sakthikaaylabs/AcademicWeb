@@ -32,16 +32,18 @@ const SearchIconWrapper = styled("div")(({ theme }) => ({
   pointerEvents: "none",
   display: "flex",
   alignItems: "center",
-  justifyContent: "center",
+  justifyContent: "",
 }));
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: "inherit",
   "& .MuiInputBase-input": {
     padding: theme.spacing(1, 1, 1, 0),
     // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
+    paddingLeft: `calc(1em + ${theme.spacing(1)})`,
+    paddingRight: `calc(1em + ${theme.spacing(7)})`,
     transition: theme.transitions.create("width"),
     width: "100%",
+    // marginLeft:`calc(1em + ${theme.spacing(4)})`,
     [theme.breakpoints.up("sm")]: {
       width: "12ch",
       "&:focus": {
