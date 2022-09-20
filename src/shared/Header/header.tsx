@@ -6,10 +6,10 @@ import { styled } from "@mui/material/styles";
 import { VscBell } from "react-icons/vsc";
 import { AiFillMessage } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
-// import {Logo} from '../assets/acade'
+
 
 import "../../Styles/header.css";
-const image = require("../assets/Logo.svg");
+const image = require("../assets/logo1.svg");
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: "50px",
@@ -55,7 +55,7 @@ export default function Header() {
   return (
     <Card className="header" sx={{ background: "#5a4ae3" }}>
       <div style={{ backgroundColor: "white" }}>
-        <img src={image} alt="logo" />
+        <img src={image} className='logo' alt="logo"  />
       </div>
       <div className="header-components">
         <div className="header-search">
