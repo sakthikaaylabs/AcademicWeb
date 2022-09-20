@@ -16,6 +16,7 @@ const Routers = () => {
     return (
         <div style={{width:'100vw'}}>
             <BrowserRouter>
+                {/* <Sidebar/> */}
                 <div style={{ textAlign: "center" }}>
                     <Routes>
                         <Route path='/home' element={<Dashboard />} />
@@ -26,6 +27,7 @@ const Routers = () => {
                         <Route path="/profile" element={<Profile />} />
                         <Route path="/group" element={<Group />} />
                         <Route path='/comingsoon' element={<ComingSoon />}/>
+                        <Route path='/Coming' element={<ComingSoon/>} />
                     </Routes>
                 </div>
             </BrowserRouter>
